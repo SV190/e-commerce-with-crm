@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Labudin Sklad - Система управления складом и CRM
 
-## Getting Started
+Веб-приложение для управления складом, заказами, возвратами и браком с интегрированной CRM-системой.
 
-First, run the development server:
+## Основные функции
 
+- Управление заказами и товарами
+- Обработка возвратов и брака
+- CRM-панель для анализа данных
+- Финансовая отчетность
+- Генерация PDF-отчетов
+
+## Технологии
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Supabase (PostgreSQL, Auth, Storage)
+- PDF Make для отчетов
+- Framer Motion для анимаций
+
+## Установка и запуск
+
+1. Клонировать репозиторий:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/labudin-sklad.git
+cd labudin-sklad
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Установить зависимости:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Создать файл `.env.local` и добавить переменные окружения:
+```
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+NEXT_PUBLIC_USE_API_STORAGE=true
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Запустить разработческий сервер:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Открыть [http://localhost:3000](http://localhost:3000) в браузере.
 
-To learn more about Next.js, take a look at the following resources:
+## База данных
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Проект использует Supabase для базы данных. Миграции SQL находятся в директории `/supabase/migrations`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Лицензия
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
