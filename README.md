@@ -23,7 +23,7 @@
 
 1. Клонировать репозиторий:
 ```bash
-git clone https://github.com/yourusername/labudin-sklad.git
+git clone https://github.com/SV190/e-commerce-with-crm.git
 cd labudin-sklad
 ```
 
@@ -36,7 +36,6 @@ npm install
 ```
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 NEXT_PUBLIC_USE_API_STORAGE=true
 ```
 
