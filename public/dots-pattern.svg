@@ -1,0 +1,19 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="smallDots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="white"/>
+      <circle cx="10" cy="10" r="1" fill="white"/>
+      <circle cx="18" cy="18" r="1" fill="white"/>
+      <circle cx="18" cy="2" r="1" fill="white"/>
+      <circle cx="2" cy="18" r="1" fill="white"/>
+    </pattern>
+    <pattern id="largeDots" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="3" fill="white"/>
+    </pattern>
+    <pattern id="combinedPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#smallDots)"/>
+      <rect width="100" height="100" fill="url(#largeDots)"/>
+    </pattern>
+  </defs>
+  <rect width="100" height="100" fill="url(#combinedPattern)"/>
+</svg> 
